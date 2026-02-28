@@ -1,4 +1,4 @@
-import type { StoreOptions } from "../interfaces";
+import type { StoreOptions } from "../types";
 
 export abstract class BaseStore {
     protected prefix: string;

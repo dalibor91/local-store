@@ -2,7 +2,7 @@
   "name": "@dalibor91/local-store",
   "version": "1.0.0",
   "description": "Front-end local package",
-  "license": "ISC",
+  "license": "MIT",
   "author": "Dalibor Menkovic <dalibormenkovic@gmail.com>",
   "type": "module",
   "main": "dist/index.js",

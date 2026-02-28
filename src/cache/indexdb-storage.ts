@@ -1,4 +1,4 @@
-import type { Entry, Store, StoredRecord,StoredValue,StoreOptions } from "../interfaces";
+import type { Entry, Store, StoredRecord,StoredValue,StoreOptions } from "../types";
 import { BaseStore } from "./base";
 
 export class IndexDbStore extends BaseStore implements Store {
