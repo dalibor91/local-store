@@ -1,12 +1,12 @@
 import { beforeEach,describe, expect, it } from "vitest";
 
-import { IndexDbStore } from "../src/cache";
+import { IndexedDbStorage } from "../src/cache";
 
-describe("IndexDbStore", () => {
-  let cache: IndexDbStore;
+describe("IndexedDbStorage", () => {
+  let cache: IndexedDbStorage;
 
   beforeEach(async () => {
-    cache = new IndexDbStore({ prefix: `test-db-${Date.now()}` });
+    cache = new IndexedDbStorage({ prefix: `test-db-${Date.now()}` });
     await cache.load("_"); // ensure DB is open before tests
   });
 

@@ -1,2 +1,2 @@
-export { IndexDbStore } from "./indexdb-storage";
+export { IndexedDbStorage } from "./indexdb-storage";
 export { LocalStore } from "./local-storage";
