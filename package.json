@@ -1,13 +1,15 @@
 {
   "name": "@dalibor91/local-store",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Front-end local package",
   "license": "MIT",
   "author": "Dalibor Menkovic <dalibormenkovic@gmail.com>",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
