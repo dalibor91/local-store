@@ -1,7 +1,7 @@
 import type { Entry, Store, StoredRecord,StoredValue,StoreOptions } from "../types";
 import { BaseStore } from "./base";
 
-export class IndexDbStore extends BaseStore implements Store {
+export class IndexedDbStorage extends BaseStore implements Store {
     private storeName = "kv";
     private dbPromise: Promise<IDBDatabase>;
   

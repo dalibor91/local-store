@@ -1,11 +1,11 @@
 # @dalibor91/local-store
 
-A small browser-oriented library for key–value caching with optional expiration. It offers two backends: **LocalStore** (Storage API: `localStorage` or custom) and **IndexDbStore** (IndexedDB), both with the same async API.
+A small browser-oriented library for key–value caching with optional expiration. It offers two backends: **LocalStore** (Storage API: `localStorage` or custom) and **IndexedDbStorage** (IndexedDB), both with the same async API.
 
 ## What it does
 
 - **LocalStore** – Uses the Storage API (`localStorage` by default, or any object with `getItem` / `setItem` / `removeItem`). Good for smaller data and simple key–value needs.
-- **IndexDbStore** – Uses IndexedDB. Better for larger or structured data and when you need a real database in the browser.
+- **IndexedDbStorage** – Uses IndexedDB. Better for larger or structured data and when you need a real database in the browser.
 
 Both support:
 
@@ -51,13 +51,13 @@ const token = await store.fetch("token");
 await store.remove("user");
 ```
 
-### IndexDbStore (IndexedDB)
+### IndexedDbStorage (IndexedDB)
 
 ```js
-import { IndexDbStore } from "@dalibor91/local-store";
+import { IndexedDbStorage } from "@dalibor91/local-store";
 
 // prefix is used as the IndexedDB database name
-const store = new IndexDbStore({ prefix: "my-app" });
+const store = new IndexedDbStorage({ prefix: "my-app" });
 
 await store.store("data", { large: "object" });
 const entry = await store.load("data");
