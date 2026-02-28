@@ -1,6 +1,6 @@
 import { beforeEach,describe, expect, it } from "vitest";
 
-import { IndexedDbStorage } from "../src/cache";
+import { IndexedDbStorage } from "../src";
 
 describe("IndexedDbStorage", () => {
   let cache: IndexedDbStorage;
