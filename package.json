@@ -5,7 +5,17 @@
   "license": "MIT",
   "author": "Dalibor Menkovic <dalibormenkovic@gmail.com>",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "keywords": [
     "cache",
     "localstorage",

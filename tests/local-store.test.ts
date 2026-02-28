@@ -1,6 +1,6 @@
 import { beforeEach,describe, expect, it } from "vitest";
 
-import { LocalStore } from "../src/cache";
+import { LocalStore } from "../src";
 import { createMockStorage } from "./mock-storage";
 
 describe("LocalStore", () => {
