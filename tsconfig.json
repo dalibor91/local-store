@@ -9,7 +9,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
@@ -33,7 +33,7 @@
 
     // Recommended Options
     "strict": true,
-    "verbatimModuleSyntax": true,
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",

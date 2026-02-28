@@ -1,1 +1,1 @@
-export { IndexedDbStorage,LocalStore } from "./storage";
+export { IndexedDbStorage, LocalStore } from "./storage";
