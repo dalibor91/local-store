@@ -29,10 +29,10 @@ npm install @dalibor91/local-store
 import { LocalStore } from "@dalibor91/local-store";
 
 // Default: uses localStorage with prefix "cache"
-const store = new LocalStore({ prefix: "foo" });
+const store = new LocalStore(localStorage);
 
 // Optional: custom prefix and storage
-const custom = new LocalStore(sessionStorage, { prefix: "my-app" });
+const custom = new LocalStore(localStorage, { prefix: "my-app" });
 
 // Store a value (optionally with TTL in milliseconds)
 await store.store("user", { id: 1, name: "Alice" });
